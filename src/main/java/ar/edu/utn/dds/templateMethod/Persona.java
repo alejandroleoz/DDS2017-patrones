@@ -4,6 +4,9 @@ public abstract class Persona {
     private String nombre;
     private String DNI;
 
+    // Define el esquelo del algoritmo y luego las
+    // subclases deben implementar los m�todos:
+    // getIdentificacion y getTipoId()
     public String identificate() {
         String frase = "Me identifico con: ";
         frase = frase + getTipoId();
@@ -12,9 +15,7 @@ public abstract class Persona {
         return frase;
     }
 
-    // Define el esquelo del algoritmo y luego las
-    // subclases deben implementar los m�todos:
-    // getIdentificacion y getTipoId()
+
     protected abstract String getIdentificacion();
 
     protected abstract String getTipoId();
