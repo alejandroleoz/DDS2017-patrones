@@ -16,6 +16,6 @@ public class SingletonTest {
 		Assert.assertSame(logger1, logger2);
 
 		logger1.setValue(expected);
-		Assert.assertEquals(expected, logger1.getValue());
+		Assert.assertEquals(expected, logger2.getValue());
 	}
 }
